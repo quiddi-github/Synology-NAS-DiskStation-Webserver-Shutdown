@@ -42,3 +42,6 @@ im Browser deiner Wahl schauen, ob der WEbserver aufgeht.<br>
 echo "Hallo Welt!"
 ls -la
 ```
+hghjghj
+2. Transfer the `webserver_shutdown.py` and `webserver_shutdown.conf` file from your PC via scp to your NAS<br>
+   `scp webserver_shutdown* youruser@192.168.1.2:/tmp`
