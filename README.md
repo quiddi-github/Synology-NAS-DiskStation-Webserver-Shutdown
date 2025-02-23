@@ -36,4 +36,9 @@ Das sollte ohen Fehler durchlaufen. Andernfalls bitte debiggen.<br>
 `http://192.168.YourNASIP.1:8080`<br>
 im Browser deiner Wahl schauen, ob der WEbserver aufgeht.<br>
 <br>
-8. Schauen, ob es nach einem Reboot immer noch läuft.
+8. Schauen, ob es nach einem Reboot immer noch `tes` läuft.
+```sh
+#!/bin/bash
+echo "Hallo Welt!"
+ls -la
+```
