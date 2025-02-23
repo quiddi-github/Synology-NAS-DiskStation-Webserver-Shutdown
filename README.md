@@ -38,3 +38,7 @@ Das sollte ohen Fehler durchlaufen. Andernfalls bitte debiggen.
 im Browser deiner Wahl schauen, ob der WEbserver aufgeht.
 
 8. Schauen, ob es nach einem Reboot immer noch läuft.
+
+Wen es stört, dass bei dem Befehl`sudo` immer nochmal das Passwort abgefragt wird, kann das mit
+`sudo vim /etc/sudoers` und dem Eintrag
+`benutzername ALL=(ALL) NOPASSWD: ALL` ändern.
