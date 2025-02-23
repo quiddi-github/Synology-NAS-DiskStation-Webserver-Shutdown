@@ -37,7 +37,11 @@ Das sollte ohen Fehler durchlaufen. Andernfalls bitte debiggen.
 `http://192.168.YourNASIP.1:8080`
 im Browser deiner Wahl schauen, ob der WEbserver aufgeht.
 
-8. Schauen, ob es nach einem Reboot immer noch läuft.
+8. Schauen, ob es nach einem Reboot immer noch läuft. Sollte der Service wie unter Punkt 6 manuell starten, aber nach einem Reboot der NAS nicht automatish anlaufen, dann mal in der `/etc/systemd/system/webserver_shutdown.service` folgendes entfernen
+   ```bash
+   After=pkgctl-Python3.9.service
+   Requires=pkgctl-Python3.9.service
+   ```
 
 Wen es stört, dass bei dem Befehl`sudo` immer nochmal das Passwort abgefragt wird, kann das mit
 `sudo vim /etc/sudoers` und dem Eintrag
